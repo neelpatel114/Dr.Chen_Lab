@@ -14,7 +14,8 @@ Be aware to not override someone elses changes in another directory.
 
 Other commands:
 Command	- Origin - Destination	Description
-git clone REPO_URL	Personal Github	Local	Creates a local copy of a Github repo. The URL can be copied from Github.com by clicking the `Clone or Download` button.
+
+-git clone REPO_URL	Personal Github	Local	Creates a local copy of a Github repo. The URL can be copied from Github.com by clicking the `Clone or Download`button.
 
 - git add README.md	Working Dir	Staging Area	Add "README.md" to staging area.
 
