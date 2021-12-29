@@ -15,15 +15,28 @@ Be aware to not override someone elses changes in another directory.
 Other commands:
 Command	- Origin - Destination	Description
 git clone REPO_URL	Personal Github	Local	Creates a local copy of a Github repo. The URL can be copied from Github.com by clicking the `Clone or Download` button.
-git add README.md	Working Dir	Staging Area	Add "README.md" to staging area.
-git commit	Staging Area	Local	Commits changes to files to the local repo.
-git commit -a	Working Dir	Local	adds and commits all file changes to the local repo.
-git pull	Personal Github	Local	Retrieve any changes from a Github repo.
-git push	Local	Personal Github	Sends commited file changes to Github repo.
-git merge	Other branch	Current branch	Merge any changes in the named branch with the current branch.
-git checkout -b patch1	NA	NA	Create a branch called "patch1" from the current branch and switch to it.
-git init	NA	NA	Initialise a directory as a Git repo.
-git log	NA	NA	Display the commit history for the current repo
-git status	NA	NA	See which files are staged/unstaged/changed
-git diff	NA	NA	See the difference between staged uncomitted changes and the most recent commit
-git stash	NA	NA	Save uncommitted changes in a temporary version and revert to the most recent commit
+
+- git add README.md	Working Dir	Staging Area	Add "README.md" to staging area.
+
+- git commit	Staging Area	Local	Commits changes to files to the local repo.
+
+- git commit -a	Working Dir	Local	adds and commits all file changes to the local repo.
+
+- git pull	Personal Github	Local	Retrieve any changes from a Github repo.
+
+- git push	Local	Personal Github	Sends commited file changes to Github repo.
+
+- git merge	Other branch	Current branch	Merge any changes in the named branch with the current branch.
+
+- git checkout -b patch1	NA	NA	Create a branch called "patch1" from the current branch and switch to it.
+
+- git init	NA	NA	Initialise a directory as a Git repo.
+
+- git log	NA	NA	Display the commit history for the current repo
+
+- git status	NA	NA	See which files are staged/unstaged/changed
+
+- git diff	NA	NA	See the difference between staged uncomitted changes and the most recent commit
+
+- git stash	NA	NA	Save uncommitted changes in a temporary version and revert to the most recent commit
+
