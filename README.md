@@ -3,11 +3,12 @@ Repository to store programs for Dr.Chen's Lab Research
 
 Once you have git installed follow the steps bellow to push changes:
 
-1. git clone https://github.com/neelpatel114/Dr.Chen_Lab.git.   (this will copy the git repo to a local directory)
-2. git status   (this will show the status of changes made to your local repo)
-3. git add .    (this will add all changes made to be commited)
-4. git commit -m "Message you want"    (this will commit your changes to the git repo with a message of what the changes are)
-5. git push.     (this will push the commit to the repo and sync it to your local directory) 
+1. git clone https://github.com/neelpatel114/Dr.Chen_Lab.git.   (copy the git repo to a local directory)
+2. git status   (show the status of changes made to your local repo)
+3. git add .    (will add all changes made to be commited)
+4. git commit -m "Message you want"    (commit your changes to the git repo with a message of what the changes are.)
+4b. (for a single file) git commit filename.txt 
+5. git push.     (push the commit to the repo and sync it to your local directory) 
 
 Be aware to not override someone elses changes in another directory. 
 
