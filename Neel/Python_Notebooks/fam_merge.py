@@ -6,36 +6,31 @@
 
 #import libraries 
 import pandas as pd 
-<<<<<<< HEAD
-=======
-import numpy as np 
->>>>>>> 16720d779d3d2fcdad595574a2d7930d0b9a67b5
 import sys
 
+#Input fam has 6 headers (Family ID(FID), Within-family(IID), father ID, mother ID, sex code, phenotype value)
+#Merge based on Family ID
 #Check command line
 if __name__ == "__main__":
-    print("###################### MERGE FILES ######################")
-    print("Expected: python3 merge.py first.bim second.bim third.bim output.bim")
+    print("####################### MERGE FAM FILES #######################")
+    print("Expected: python3 fam_merge.py first.fam second.fam output.fam")
     print(f"Arguments count: {len(sys.argv)}")
     for i, arg in enumerate(sys.argv):
-        print(f"Argument {i:>6}: {arg}")
+        print(f"Argument {i:>5}: {arg}")
 
 #Get command line arguments 
 data1File = sys.argv[1]
 data2File = sys.argv[2]
-data3File = sys.argv[3]
-dataOutputFile = sys.argv[4]
+dataOutputFile = sys.argv[3]
 
 #read in files 
 data1 = pd.read_csv(data1File, sep = '\s+', header = None)
 data2 = pd.read_csv(data2File, sep = '\s+', header = None)
-data3 = pd.read_csv(data3File, sep='\s+', header = None)
 
 #Merge files and drop all columns (compare with chrom:SNP column)
-merged = pd.merge(data1, data2, on = 1 ,  how='outer', indicator=True)
+merged = pd.merge(data1, data2, on = 0 ,  how='outer', indicator=True)
 matched_SNP = merged.loc[merged["_merge"] == "both"].drop("_merge", axis=1)
-merged = pd.merge(matched_SNP, data3, on = 1, how='outer', indicator=True )
-matched_SNP = merged.loc[merged["_merge"] == "both"].drop("_merge", axis=1)
+
 matched_SNP = matched_SNP[[1]]
 
 #output file

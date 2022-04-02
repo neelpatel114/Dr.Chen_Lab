@@ -1,0 +1,5 @@
+EUR,/mnt/data_schen_1/jingchun/gwas_data/COVID-19/COVID19_baseFiles_allsnpid/UKBB_covid19_EUR_061821.addsnpid.txt.gz
+EURtested,/mnt/data_schen_1/jingchun/gwas_data/COVID-19/COVID19_baseFiles_allsnpid/UKBB_covid19_EURtested_061821.addsnpid.txt.gz
+hsptl_EUR,/mnt/data_schen_1/jingchun/gwas_data/COVID-19/COVID19_baseFiles_allsnpid/UKBB_hsptl_EUR_061821.addsnpid.txt.gz
+hsptl_EURpstv,/mnt/data_schen_1/jingchun/gwas_data/COVID-19/COVID19_baseFiles_allsnpid/UKBB_hsptl_EURpstv_061821.addsnpid.txt.gz
+hsptl_EURtested,/mnt/data_schen_1/jingchun/gwas_data/COVID-19/COVID19_baseFiles_allsnpid/UKBB_hsptl_EURtested_061821.addsnpid.txt.gz
